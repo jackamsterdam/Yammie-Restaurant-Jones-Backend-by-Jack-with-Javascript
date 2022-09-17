@@ -1,4 +1,4 @@
-###### Yammie Restaurant Backend Project by Jack Amsterdam in JAVASCRIPT **&copy;**
+## Yammie Restaurant Backend Project by Jack Amsterdam in JAVASCRIPT **&copy;**
 
 **If you want the Typescript version of this code please see the other file
 
@@ -10,14 +10,14 @@ Secondly, I uploaded the server as a package to NPM that can run while you get l
 
 [https://www.npmjs.com/package/yammie-restaurant-backend-for-jones-by-jack-in-javascript](https://www.npmjs.com/package/yammie-restaurant-backend-for-jones-by-jack-in-javascript). Further instructions on how to run in README.MD
 
-###### Instructions to run the code in your local machine:
+## Instructions to run the code in your local machine:
 
 1. Git clone the respository.
 2. There is a folder called Database -import the sql file into your phpMyAdmin or your MySQL Workbench.
 3. Open  terminal on the Backend folder and type: npm i && npm start.
 4. Server will run for you on [http://localhost:3001](http://localhost:3001)
 
-###### *Summary of stages I took in building this project:*
+### *Summary of stages I took in building this project:*
 
 I made a Database in mySQL called YammieDB and I added a Table called orders. I then inserted  a couple of orders. Each order has an auto incremented order id , price, order date, customer name, phone and address for delivery.
 
@@ -31,7 +31,7 @@ I exported the database and put the file in the Database folder. To run the prog
 
 I built an OrderModel and an onlineOrderModel. So I am extending  the Base class OrderModel with  OnlineOrderModel to support orders that are online for Yammie restaurant. I also have an errorModel class for error handling. These classes are used because I do not want to work with object literals. These object's are repeating themselves multiple times in my code so I made a class and then I made instances of a class. For example with the errorModel I have a status and message  and this saves me from making mistakes e.g. writing statussss instead of status. Additionally I am turning the request.body which is a literal object into an instance of an OnlineOrderModel class so now that request.body has all the methods of that class (has all Joi validation methods for example). This makes my program more object oriented.
 
-**Layers:**
+# **Layers:**
 
 So, one of layered architecture's goals is to separate concerns among components. Another goal is to organize layers so they can perform a specific role within the app. I have the data access layer connecting to the database, business logic layer for all the logic and a controller layer with routes returning a response from the server.
 
@@ -43,7 +43,7 @@ Throughout the layers in each step I am returning a promise using async await sy
 
 app.ts - Instead of having all the above in app.ts I seperated everything into layers. Here we start a server and  listen on port 3001 for connections as defined in my **.env** file which holds my environment variables.
 
-###### **Security**
+# **Security**
 
 I am using cors package so React frontend project, which usually runs on http://localhost:3000, won't have a cross origin issue.
 
