@@ -17,7 +17,7 @@ Secondly, I uploaded the server as a package to NPM that can run while you get l
 3. Open  terminal on the Backend folder and type: npm i && npm start.
 4. Server will run for you on [http://localhost:3001](http://localhost:3001)
 
-###### *Summary of stages I took in building this project:*
+#### *Summary of stages I took in building this project:*
 
 I made a Database in mySQL called YammieDB and I added a Table called orders. I then inserted  a couple of orders. Each order has an auto incremented order id , price, order date, customer name, phone and address for delivery.
 
