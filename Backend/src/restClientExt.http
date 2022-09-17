@@ -1,0 +1,37 @@
+###REST CLIENT Extension - download the extension and test REST here (additional option to POSTMAN)
+
+### Get last day orders only:
+GET http://localhost:3001/api/orders/
+
+
+### Add new order:
+POST http://localhost:3001/api/orders/
+Content-Type: application/json
+
+{
+    "price": 40.99,
+    "orderDate": "2022-09-28 09:41:22",
+    "customerName": "Jones",
+    "deliveryAddress": "205 Hudson St, New York, NY 10013, United States",
+    "phone": "0584594576"
+}
+
+###
+
+###! Error checks:
+
+### 404 ErrorModel - Route not found
+GET http://localhost:3001/api/orderssssssssssssssssssss
+
+###  400 ErrorModel Bad Request  Joi validation error
+POST http://localhost:3001/api/orders/
+Content-Type: application/json
+
+{
+    "price": "error",
+    "orderDate": "error",
+    "customerName": 100,
+    "deliveryAddress": 100,
+    "phone": 584594576
+}
+

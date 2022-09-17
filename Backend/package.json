@@ -1,0 +1,43 @@
+{
+  "name": "yammie-restaurant-backend-for-jones-by-jack-in-javascript",
+  "version": "1.0.0",
+  "description": "Backend Rest API for an online restaurant written in js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "build": "tsc",
+    "test": "mocha"
+  
+  },
+  "keywords": [
+    "yammie",
+    "rest api",
+    "Jones",
+    "orders",
+    "jack",
+    "amsterdam",
+    "backend",
+    "back end",
+    "back-end",
+    "mock",
+    "rest",
+    "restful service"
+  ],
+  "author": "Jack Amsterdam",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "chai-http": "^4.3.0",
+    "mocha": "^10.0.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-rate-limit": "^6.3.0",
+    "joi": "^17.6.0",
+    "mysql": "^2.18.1",
+    "striptags": "^3.2.0",
+    "winston": "^3.6.0"
+  }
+}
