@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "2e87044d-b5f1-47ee-9ef5-71c5f34c4ed2",
+		"_postman_id": "8c2155a9-8aba-4197-8530-49fc572cd897",
 		"name": "Yammie",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "16114041"
@@ -10,7 +10,20 @@
 			"name": "Get all orders from last 24 hours",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/orders/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"orders",
+						""
+					]
+				}
 			},
 			"response": []
 		},
@@ -18,7 +31,19 @@
 			"name": "WITH 404 ERROR = Get all orders from last 24 hours",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/orderssss",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"orderssss"
+					]
+				}
 			},
 			"response": []
 		},
@@ -29,7 +54,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"price\": 50.20,\r\n    \"orderDate\": \"2022-09-17 08:41:22\",\r\n    \"customerName\": \"Devin\",\r\n    \"deliveryAddress\": \"75 9th Ave, New York, NY 10011, United States\"\r\n}",
+					"raw": "{\r\n    \"price\": 50.20,\r\n    \"orderDate\": \"2022-09-28 08:41:22\",\r\n    \"customerName\": \"Devin\",\r\n    \"deliveryAddress\": \"75 9th Ave, New York, NY 10011, United States\",\r\n    \"phone\": \"0584578498\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -59,7 +84,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"price\": \"error\",\r\n    \"orderDate\": \"error\",\r\n    \"customerName\": 100,\r\n    \"deliveryAddress\": 100\r\n   \r\n}",
+					"raw": "{\r\n    \"price\": \"error\",\r\n    \"orderDate\": \"error\",\r\n    \"customerName\": 100,\r\n    \"deliveryAddress\": 100,\r\n    \"phone\": 584578498\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
