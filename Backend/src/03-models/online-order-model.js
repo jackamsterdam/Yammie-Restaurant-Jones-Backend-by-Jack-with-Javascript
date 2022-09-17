@@ -10,7 +10,7 @@ class OnlineOrderModel extends OrderModel {
         this.phone = order.phone
     }
 
-    //private becuasue I only want this class to use it and static becuase I only want it to be made once for all instances  
+    //private because I only want this class to use it and static because I only want it to be made once for all instances  
     static postValidationSchema = Joi.object({
         id: Joi.forbidden(),
         price: Joi.number().required().min(0).max(100000),

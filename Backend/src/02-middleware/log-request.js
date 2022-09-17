@@ -1,6 +1,6 @@
 const logger = require("../01-utils/log-helper")
 
-async function logReqests(request, response, next) {
+async function logRequests(request, response, next) {
 
     const msg = `${request.method} Request to ${request.originalUrl}`
     logger.info(msg)
@@ -9,4 +9,4 @@ async function logReqests(request, response, next) {
 }
 
 
-module.exports = logReqests
+module.exports = logRequests

@@ -12,7 +12,7 @@ async function getAllOrdersLastDay() {
 
 //Add new order
 async function addOrder(order) {
-    //Validation -if new order doesn ot pass joi validation throw new Error (to the controller which then gets passed to errors-handler middleware)
+    //Validation -if new order does not pass joi validation throw new Error (to the controller which then gets passed to errors-handler middleware)
     const errors = order.validatePost()
     if (errors) throw new ErrorModel(400, errors)
 
