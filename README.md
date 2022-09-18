@@ -25,7 +25,7 @@ I exported the database and put the file in the Database folder. To run the prog
 
 ###### In my Backend folder where node is I have the following Directory Structure dividing my files by Node's Layered Architecture מודל השכבות -
 
-1. Utils folder -  with a config file - where all my configurations go so If I want to change anything in the future I only need to apply the changes here. I also have a file called log-helper which uses Winston library to log requests in the format I specified and I display all requests and errors in logger.log file for informative logging.
+1. Utils folder -  with a config file - where all my configurations go so if I want to change anything in the future I only need to apply the changes here. I also have a file called log-helper which uses Winston library to log requests in the format I specified and I display all requests and errors in logger.log file for informative logging.
 2. Middleware folder - with the following middleware's  - an error handler to catch all errors thrown from any layer ( a catch all for all errors), I have a log-requests file which is middleware that logs every request to the logger.log file. I also have a sanitize file to prevent xss attacks so users can't for example send me a string with a script tag - it  will strip the tags.
 3. Model folder - this is how the data is coming and represented from the mySQL database YammieDB.
 
@@ -37,7 +37,7 @@ So, one of layered architecture's goals is to separate concerns among components
 
 Throughout the layers in each step I am returning a promise using async await syntax because it takes time for data to come back from the database and javascript is single threaded so I do not want to hog the call stack with each request.
 
-4. Data access Layer folder - contains  a dal file that connects to the database. Since node's original functions in 2009  did not work with promises but with callbacks I had to  promisify the execute function. So the function returns a promise. I added a "values" parameter in order to prevent sql injections so characters will be escaped. Notice that my connection is using the config file so If you want to connect to a different database all you need is to change is the config file.
+4. Data access Layer folder - contains  a dal file that connects to the database. Since node's original functions in 2009  did not work with promises but with callbacks I had to  promisify the execute function. So the function returns a promise. I added a "values" parameter in order to prevent sql injections so characters will be escaped. Notice that my connection is using the config file so if you want to connect to a different database all you need is to change is the config file.
 5. Business Logic Layer folder - contains order logic file that gets All the orders by last day and returns a promise and also adds a new order and returns a promise.
 6. Controller Layer folder - contains orders controller - using express.Router() to have the routes here instead of in app.js. Contains two routes that frontend can surf too.
 
