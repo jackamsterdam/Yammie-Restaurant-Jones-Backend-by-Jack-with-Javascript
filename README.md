@@ -14,7 +14,7 @@ Secondly, I uploaded the server as a package to NPM that can run while you get l
 
 1. Git clone the repository.
 2. There is a folder called Database -import the sql file into your phpMyAdmin or your MySQL Workbench.
-3. Open  terminal on the Backend folder and type: npm i && npm start.
+3. Open the terminal on the Backend folder and type: npm i && npm start.
 4. Server will run for you on [http://localhost:3001](http://localhost:3001)
 
 ### *Summary of stages I took in building this project:*
