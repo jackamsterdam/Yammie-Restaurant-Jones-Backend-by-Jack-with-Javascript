@@ -4,7 +4,8 @@
 
 *Yammie restaurant is expanding its services online and I was asked to build a REST API for the backend with Node.js for online orders. I then built the rest according to Node's Layered Architecture. This REST allows you to get all of last day's orders as well as add an order. Code is production ready.*
 
-First of all the server is deployed on Heroku - **Go To -** [https://yammie-backend-jones-by-jack.herokuapp.com/api/orders](https://yammie-backend-jones-by-jack.herokuapp.com/api/orders) **to see last day's orders.**
+First of all the server is deployed on Heroku - To see last days orders go to:
+https://yammie-backend-jones-by-jack.herokuapp.com/api/orders 
 
 Secondly, I uploaded the server as a package to NPM that can run while you get latest orders and add orders. I am running a ClearDB database in the cloud for this. The npm package can be downloaded here as a global package installation:
 
