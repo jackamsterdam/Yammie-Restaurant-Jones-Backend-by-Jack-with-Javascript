@@ -8,7 +8,6 @@ First of all the server is deployed on Heroku - To see the last days orders go t
 https://yammie-backend-jones-by-jack.herokuapp.com/api/orders 
 
 Secondly, I uploaded the server as a package to NPM that can run while you get latest orders and add orders. I am running a ClearDB database in the cloud for this. The npm package can be downloaded here as a global package installation:
-
 [https://www.npmjs.com/package/yammie-restaurant-backend-for-jones-by-jack-in-javascript](https://www.npmjs.com/package/yammie-restaurant-backend-for-jones-by-jack-in-javascript). Further instructions on how to run using this package in the README.MD on the npm page.
 
 ## Instructions to run the code in your local machine:
